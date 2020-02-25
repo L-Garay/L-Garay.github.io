@@ -9929,6 +9929,11 @@ a.text-dark:focus {
 .page-section {
   padding: 6rem 0;
 }
+.about-section-background {
+  background-image: url("../img/mainPhoto/beach.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -10084,7 +10089,11 @@ a.text-dark:focus {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 }
-
+.masthead-background {
+  background-image: url("../img/mainPhoto/wall.jpg");
+  background-position: center;
+  background-size: cover;
+}
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
