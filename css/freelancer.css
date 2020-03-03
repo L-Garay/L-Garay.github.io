@@ -10353,3 +10353,8 @@ hr {
   padding: 15pt;
   /* background-color: rgba(227, 198, 184, 0.4); */
 }
+#logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
