@@ -33,20 +33,20 @@
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
     ></script>
     <script type="text/javascript">
-      (function() {
-        emailjs.init("user_b2HN3DOB9yIkgddI73kwu");
+      (function () {
+        emailjs.init('user_b2HN3DOB9yIkgddI73kwu');
       })();
     </script>
     <script type="text/javascript">
-      window.onload = function() {
+      window.onload = function () {
         document
-          .getElementById("contact-form")
-          .addEventListener("submit", function(event) {
+          .getElementById('contact-form')
+          .addEventListener('submit', function (event) {
             event.preventDefault();
             // generate the contact number value
             this.contact_number.value = (Math.random() * 100000) | 0;
-            emailjs.sendForm("logan_gmail", "contact_form", this);
-            document.getElementById("contact-form").reset();
+            emailjs.sendForm('logan_gmail', 'contact_form', this);
+            document.getElementById('contact-form').reset();
           });
       };
     </script>
@@ -135,61 +135,67 @@
             class="m-3"
             src="img/Languagelogos/HTML5.png"
             alt="HTML5 Logo"
-            style="height: 7rem; width: 7rem;"
+            style="height: 7rem; width: 7rem"
           />
           <img
             class="m-3"
             src="img/Languagelogos/CSS3.png"
             alt="HTML5 Logo"
-            style="height: 7rem; width: 7rem;"
+            style="height: 7rem; width: 7rem"
           />
           <img
             class="m-3"
             src="img/Languagelogos/Javascript5.png"
             alt="HTML5 Logo"
-            style="height: 7rem; width: 5rem;"
+            style="height: 7rem; width: 5rem"
           />
           <img
             class="m-3"
             src="img/Languagelogos/VueJs.png"
             alt="HTML5 Logo"
-            style="height: 7rem; width: 7rem;"
+            style="height: 7rem; width: 7rem"
+          />
+          <img
+            class="m-3"
+            src="img/Languagelogos/angular.png"
+            alt="HTML5 Logo"
+            style="height: 7rem; width: 7rem"
           />
           <img
             class="m-3"
             src="img/Languagelogos/NodeJs.png"
             alt="HTML5 Logo"
-            style="height: 7rem; width: 7rem;"
+            style="height: 7rem; width: 7rem"
           />
           <img
             class="m-3"
             src="img/Languagelogos/MongoDB.png"
             alt="HTML5 Logo"
-            style="height: 7rem; width: 7rem;"
+            style="height: 7rem; width: 7rem"
           />
           <img
             class="m-3"
             src="img/Languagelogos/Csharp.png"
             alt="HTML5 Logo"
-            style="height: 7rem; width: 7rem;"
+            style="height: 7rem; width: 7rem"
           />
           <img
             class="m-3"
             src="img/Languagelogos/MySQL.png"
             alt="HTML5 Logo"
-            style="height: 7rem; width: 7rem;"
+            style="height: 7rem; width: 7rem"
           />
           <img
             class="m-3"
             src="img/Languagelogos/Git.png"
             alt="HTML5 Logo"
-            style="height: 7rem; width: 7rem;"
+            style="height: 7rem; width: 7rem"
           />
           <img
             class="m-3"
             src="img/Languagelogos/Bootstrap.png"
             alt="HTML5 Logo"
-            style="height: 7rem; width: 7rem;"
+            style="height: 7rem; width: 7rem"
           />
         </div>
       </div>
@@ -230,8 +236,12 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <div style="height:255px; width:350px;" class="projectTitles1">
-                <h1>BugTracker</h1>
+              <div
+                style="height: 255px; width: 350px"
+                class="projectTitles1 flex-column"
+              >
+                <h1>Noble Intent,</h1>
+                <h1>LLC</h1>
               </div>
               <!-- <img class="img-fluid" src="img/portfolio/cabin.png" alt="" /> -->
             </div>
@@ -251,8 +261,8 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <div style="height:255px; width:350px;" class="projectTitles2">
-                <h1>Kanban</h1>
+              <div style="height: 255px; width: 350px" class="projectTitles2">
+                <h1>Snake Game</h1>
               </div>
               <!-- <img class="img-fluid" src="img/portfolio/cake.png" alt="" /> -->
             </div>
@@ -272,8 +282,8 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <div style="height:255px; width:350px;" class="projectTitles1">
-                <h1>Bar Hop</h1>
+              <div style="height: 255px; width: 350px" class="projectTitles1">
+                <h1>Bug Tracker</h1>
               </div>
               <!-- <img class="img-fluid" src="img/portfolio/circus.png" alt="" /> -->
             </div>
@@ -293,8 +303,8 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <div style="height:255px; width:350px;" class="projectTitles2">
-                <h1>Keepr</h1>
+              <div style="height: 255px; width: 350px" class="projectTitles2">
+                <h1>Kanban</h1>
               </div>
               <!-- <img class="img-fluid" src="img/portfolio/game.png" alt="" /> -->
             </div>
@@ -314,8 +324,8 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <div style="height:255px; width:350px;" class="projectTitles1">
-                <h1>MoonMiner 2.0</h1>
+              <div style="height: 255px; width: 350px" class="projectTitles1">
+                <h1>Keepr</h1>
               </div>
               <!-- <img class="img-fluid" src="img/portfolio/safe.png" alt="" /> -->
             </div>
@@ -336,11 +346,10 @@
                 </div>
               </div>
               <div
-                style="height:255px; width:350px;"
+                style="height: 255px; width: 350px"
                 class="projectTitles2 flex-column"
               >
-                <h1>Noble Intent,</h1>
-                <h1>LCC</h1>
+                <h1>Momentum</h1>
               </div>
               <!-- <img class="img-fluid" src="img/portfolio/submarine.png" alt="" /> -->
             </div>
@@ -357,9 +366,7 @@
     >
       <div class="container">
         <!-- About Section Heading -->
-        <h2 class="page-section-heading text-center text-uppercase">
-          About
-        </h2>
+        <h2 class="page-section-heading text-center text-uppercase">About</h2>
 
         <!-- Icon Divider -->
         <div class="divider-custom divider-light">
@@ -566,7 +573,7 @@
     </footer>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed ">
+    <div class="scroll-to-top d-lg-none position-fixed">
       <a
         class="js-scroll-trigger d-block text-center text-white rounded"
         href="#page-top"
@@ -606,39 +613,38 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    BugTracker
+                    Noble Intent, LLC
                   </h2>
                   <!-- Icon Divider -->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon">
-                      <i class="fas fa-bug"></i>
+                      <i class="fas fa-briefcase"></i>
                     </div>
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image -->
-                  <a
-                    href="https://tracker-of-bugs.herokuapp.com/#/"
-                    target="_blank"
+                  <a href="https://www.nobleintentprograms.com/" target="_blank"
                     ><img
                       class="img-fluid rounded mb-5 projectImgs"
-                      src="img/projects/BugTracker.png"
+                      src="img/projects/NobleIntentsnip.png"
                       alt=""
                   /></a>
                   <!-- Portfolio Modal - Text -->
-                  <p>
-                    Environment: HTML, CSS, JavaScript, Node.js, Vue.js, MongoDB
-                  </p>
+                  <p>Environment: Wix platform</p>
                   <hr />
                   <p class="mb-5">
-                    This app allows a user to record and track current or past
-                    bugs, and comment on the issue. It utilizes creating
-                    one-to-many data relationships. This project was a first in
-                    several respects; it was my first project using the Vue.js
-                    framework, and the first time I connected my own back-end
-                    server with my own front-end. It's simple yet allowed me to
-                    better understand Vue.js and Node.js and introduced me to
-                    data-relationships.
+                    I was given the opportunity to create Noble Intent, LLC's
+                    company website. They are a startup company of mental
+                    healthcare providers that offer multiple clinical,
+                    educational and support services to clients and parents.
+                    They just needed static website with basic information about
+                    the company, services provided, and employee bios. I used
+                    the Wix web development platform because they just need a
+                    static site and the platform allowed me to deliver the
+                    product in a quick fashion. I respect the work of Noble
+                    Intent and I thoroughly enjoyed creating their website, and
+                    look forward to continue updating it as needed.
                   </p>
                   <button
                     class="btn btn-primary2"
@@ -685,45 +691,40 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Kanban
+                    Snake Game
                   </h2>
                   <!-- Icon Divider -->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon">
-                      <i class="fas fa-chalkboard"></i>
+                      <i class="fas fa-gamepad"></i>
                     </div>
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image -->
-                  <a href="https://jlo-kanban.herokuapp.com/#/" target="_blank">
+                  <a
+                    href="https://simple-snakey-game.herokuapp.com/#/"
+                    target="_blank"
+                  >
                     <img
                       class="img-fluid rounded mb-5 projectImgs"
-                      src="img/projects/Kanban.png"
+                      src="img/projects/snake.png"
                       alt=""
                   /></a>
                   <!-- Portfolio Modal - Text -->
-                  <p>
-                    Environment: HTML, CSS, JavaScript, Vue.js, Node.js, MongoDB
-                  </p>
+                  <p>Environment: HTML, CSS, JavaScript</p>
                   <hr />
                   <p class="mb-5">
-                    This app is a recreation of a Kanban board; which allows
-                    users to create boards about specific projects or issues,
-                    which can have lists that can contain tasks that need to be
-                    completed, and those tasks can have their own comments.
-                    Think of Trello as an example. This project utilizs Express
-                    Sessions for authentication and bcrypt for password hashing.
-                    I worked on this project with a partner, and gained
-                    expereince in paired programming. If you think the design is
-                    unique, that is what we were going for. If you don't like
-                    it, it was all my partner's idea...
-                  </p>
-                  <p>
-                    <small>
-                      To login to app use these credentials || Email:
-                      loganemail@email.com Password: dorwssap
-                    </small>
+                    I decided I wanted to go back to the basics, and just create
+                    a simple static site. I thought what better idea than to
+                    recreate an old classic game, the snake game! Right now it
+                    is very basic, you can just use the arrow keys to move the
+                    snake and eat the food, if you touch your body or the edge
+                    of the map, you lose. I plan on adding in some extra little
+                    features like a body-length counter, and some settings to
+                    change the appearance of the game and how it operates like
+                    snake movement speed and how much the snake grows when it
+                    eats some food. Stay tuned!
                   </p>
                   <button
                     class="btn btn-primary2"
@@ -770,41 +771,48 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Bar Hop
+                    Bug Tracker
                   </h2>
                   <!-- Icon Divider -->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon">
-                      <i class="fas fa-glass-cheers"></i>
+                      <i class="fas fa-bug"></i>
                     </div>
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image -->
-                  <img
-                    class="img-fluid rounded mb-5 projectImgs2"
-                    src="img/projects/capstone.png"
-                    alt=""
-                  />
+                  <a
+                    href="https://tracker-of-bugs.herokuapp.com/#/"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid rounded mb-5 projectImgs"
+                      src="img/projects/BugTracker.png"
+                      alt=""
+                  /></a>
                   <!-- Portfolio Modal - Text -->
                   <p>
                     Environment: HTML, CSS, JavaScript, Vue.js, Node.js, MongoDB
                   </p>
                   <hr />
-                  <p><b>**Coming Soon**</b></p>
+
                   <p class="mb-5">
-                    This is a barcrawl planning app. It allows the user to
-                    search their immediate area for bars and select which ones
-                    they want to add to their Outing; they can log how many and
-                    what kind of drinks they've had, and upload any photos they
-                    may have taken while out. Goals for future features include
-                    but are not limited to: adding friends to outings, voting
-                    system on when to move to new bar, 'chatroom' where friends
-                    can communicate through app with each other, 'Take Me Home'
-                    feature that will call user's preffered ride-sharing compnay
-                    or emergency contact when user is too inebriated to drive.
-                    I'd love to discuss the idea more and what's already been
-                    done if you're curious, contact me!
+                    This app allows a user to record and track current or past
+                    bugs, and comment on the issue (to recreate some sort of IT
+                    management system). It utilizes creating one-to-many data
+                    relationships. This project was a first in several respects;
+                    it was my first project using the Vue.js framework, and the
+                    first time I connected my own back-end server with my own
+                    front-end. It's simple yet allowed me to better understand
+                    Vue.js and Node.js and introduced me to data-relationships
+                    and creating full-stack applicaitons.
+                  </p>
+                  <p>
+                    <small
+                      >**I will be going through and making small
+                      changes/improvements here in the near future**</small
+                    >
                   </p>
                   <button
                     class="btn btn-primary2"
@@ -851,47 +859,44 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Keepr
+                    Kanban
                   </h2>
                   <!-- Icon Divider -->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon">
-                      <i class="fab fa-fort-awesome"></i>
+                      <i class="fas fa-chalkboard-teacher"></i>
                     </div>
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image -->
-                  <a
-                    href="https://keepr-final.herokuapp.com/#/"
-                    target="_blank"
-                  >
+                  <a href="https://jlo-kanban.herokuapp.com/#/" target="_blank">
                     <img
                       class="img-fluid rounded mb-5 projectImgs"
-                      src="img/projects/Keepr.png"
+                      src="img/projects/Kanban.png"
                       alt=""
                   /></a>
                   <!-- Portfolio Modal - Text -->
                   <p>
-                    Environment: HTML, CSS, Javascript, Vue.js, C#, .Net, MySQL
+                    Environment: HTML, CSS, Javascript, Vue.js, Node.js, MongoDB
                   </p>
                   <hr />
                   <p class="mb-5">
-                    This app is essentially a recreation of Pinterest. A user
-                    can view, create, and save what are called 'keeps' (posts),
-                    and create and view their saved 'vaults' (collections of
-                    posts). In order to create a keep or vault the app user must
-                    be logged in, and this project implements Auth0 for user
-                    management. It also utilizes SQL to communicate with the
-                    MySQL database. Tests were developed for the server, which
-                    gave me experience in Test Driven Development. This project
-                    demonstrates a working knowledge of building a full-stack
-                    applicaiton.
+                    This app is a recreation of a Kanban board; which allows
+                    users to create boards about specific projects or issues.
+                    Each board can have multiple lists that can each contain
+                    specific tasks that need to be completed. Each task can have
+                    their own comments. Think of Trello as an example. This
+                    project utilizs Express Sessions for authentication and
+                    bcrypt for password hashing. I worked on this project with a
+                    partner, and gained expereince in paired programming. If you
+                    think the design is unique, that is what we were going for.
+                    If you don't like it, it was all my partner's idea...
                   </p>
                   <p>
                     <small>
                       To login to app use these credentials || Email:
-                      fake@test.com Password: Password1997!
+                      loganemail@email.com Password: drowssap
                     </small>
                   </p>
                   <button
@@ -939,7 +944,7 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Moon Miner 2.0
+                    Keepr
                   </h2>
                   <!-- Icon Divider -->
                   <div class="divider-custom">
@@ -950,39 +955,35 @@
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image -->
-                  <img
-                    class="img-fluid rounded mb-5 projectImgs2"
-                    src="img/projects/MoonMiner.png"
-                    alt=""
-                  />
+                  <a href="http://keepr-final.herokuapp.com/#/" target="_blank">
+                    <img
+                      class="img-fluid rounded mb-5 projectImgs"
+                      src="img/projects/Keepr.png"
+                      alt=""
+                  /></a>
                   <!-- Portfolio Modal - Text -->
                   <p>
-                    Environment: HTML, CSS, JavaScript, React, C#, .Net, MySQL
+                    Environment: HTML, CSS, JavaScript, Vue.js, C#, .Net Core,
+                    MySQL
                   </p>
                   <hr />
-                  <p><b>**Coming Soon**</b></p>
                   <p class="mb-5">
-                    This app will be an extension of one of the first projects I
-                    ever completed; a click game. Except, beyond just clicking
-                    and upgrading the value of each click, I plan on
-                    implementing Socket.IO to enable real-time communication and
-                    interaction (cooperative or competitive) with other users,
-                    and 'currency' in the game that users can use to 'purchase'
-                    loot boxes, and those loot boxes will give you a random
-                    peice of loot (css styling mainly, more profile picture
-                    options, user 'titles', etc).
+                    This app is essentially a recreation of Pinterest. A user
+                    can view, create, and save what are called 'keeps' (posts),
+                    and create and view their saved 'vaults' (collections of
+                    posts). In order to create a keep or vault the app user must
+                    be logged in, and this project implements Auth0 for user
+                    management. It also utilizes SQL to communicate with the
+                    MySQL database. Tests were developed for the server, which
+                    gave me experience in Test Driven Development. To deploy
+                    this application on Heroku I utilized Docker containers.
                   </p>
 
                   <p>
-                    The tentative premise of the game right now is a spinoff of
-                    a colleague's of mine, where in his version you mined the
-                    moon for cheese, and in mine you'll be mining for different
-                    types of minerals (to put it simply). I'm going to be using
-                    React to create the front-end, as it's something I want to
-                    learn, and C#/.Net and MySQL to further my current
-                    understanding. I enjoyed making the simple game so much and
-                    had so many ideas of how to extend upon it back then, so
-                    I've decided to do just that.
+                    <small
+                      >To login to app use these credentials || Email:
+                      fake@test.com Password: Password1997!</small
+                    >
                   </p>
                   <button
                     class="btn btn-primary2"
@@ -1029,7 +1030,7 @@
                   <h2
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                   >
-                    Noble Intent, LLC
+                    Momentum
                   </h2>
                   <!-- Icon Divider -->
                   <div class="divider-custom">
@@ -1042,25 +1043,30 @@
                   <!-- Portfolio Modal - Image -->
                   <img
                     class="img-fluid rounded mb-5 projectImgs2"
-                    src="img/projects/NobleIntentLogo.jpg"
+                    src="img/projects/Momentumsnip.png"
                     alt=""
                   />
                   <!-- Portfolio Modal - Text -->
-                  <p>Environment: HTML, CSS, JavaScript, Vue.js</p>
+                  <p>
+                    Environment: HTML, CSS, JavaScript, Vue.js, Node.js, MongoDB
+                  </p>
                   <hr />
                   <p><b>**Coming Soon**</b></p>
                   <p class="mb-5">
-                    I've been given the opportunity to create Noble Intent,
-                    LLC's company website. They are a startup company of mental
-                    healthcare providers that offer multiple clinical,
-                    educational and support services to clients and parents.
-                    They just need static website with basic information about
-                    the company, services provided, and employee bios. I'll be
-                    using the Vuex design and the Vue-Router to manage the dom.
-                    I will also be implementing an EmailJs contact form to allow
-                    site visitors to send a designated employee an email. I
-                    respect the work of Noble Intent and am looking forward to
-                    creating their website.
+                    This app is a recreation of the actual browser extension
+                    called Momentum, where we make multiple simultaneous API
+                    calls to get the background image, weather data, and a
+                    random quote. It will have the traditional 'Todo list' along
+                    with some settings to save and select your favorite images
+                    and quotes. However my partner and I will be adding a
+                    considerable amount of features not originally provided. We
+                    are going to include more APIs to include things like news,
+                    finance, and sports. We will add some utility 'widgets' like
+                    a simple calculator, calendar, and contact list. And for fun
+                    we want to add some basic games (tic-tac-toe, click games,
+                    etc). It'll be a lot of work but I'm looking forward to the
+                    challenge and when it's done it should be a considerable
+                    improvement on the origianl.
                   </p>
                   <button
                     class="btn btn-primary2"
