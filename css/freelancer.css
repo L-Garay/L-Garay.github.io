@@ -437,10 +437,10 @@ h6,
 }
 
 .lead {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
   color: black;
-  text-shadow: 1pt 1pt 1pt grey;
+  text-shadow: 0 0 1pt grey;
 }
 
 .lead2 {
