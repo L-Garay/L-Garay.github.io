@@ -50,6 +50,9 @@
           });
       };
     </script>
+    <script type="text/javascript">
+
+    </script>
 
     <!-- Theme CSS -->
     <link href="css/freelancer.css" rel="stylesheet" />
@@ -245,7 +248,7 @@
           </div>
   
           <!-- About Section Content -->
-          <div class="row">
+          <div class="row" id="about-content">
             <div class="col-lg-5 ml-auto">
               <p class="lead">
                 I'm a Fullstack Software developer specializing in Frontend work with almost 2 years of production development experience and over 2 years of total coding. I've been lukcy enough to obtain a wide range of experiences from working at both a small startup and a multi-billion dollar company. Combine that with over 6+ years of customer service experience during my time pre and while at college along with the critical thinking and problem solving skills developed while obtaining my Bachelor of Science in Psychology; and you're looking at one well-rounded developer. 
@@ -262,8 +265,101 @@
             </div>
           </div>
   
+          <!-- Journey part of About Section -->
+          <div class="row">
+          <div class="col-12" id="journey">
+            <div class="journey-card" id="journey-graduation" >
+              <p>May 2019</p>
+              <p>Graduate from ISU</p>
+              <div class="journey-card-img graduation"></div>
+              <div id="graduation-popup" class="journey-popup">
+                <p>I recieved my BS in Psychology while also minoring in Philosophy</p>
+                <p>I also played intramural soccer and won two championships</p>
+              </div>
+            </div>
+            <div class="journey-card" id="journey-bcw-start" >
+              <p>Nov 2019</p>
+              <p>Start Boise Codeworks</p>
+              <div class="journey-card-img bcw-start"></div>
+              <div id="bcw-start-popup" class="journey-popup">
+                <p>I enrolled in the Fullstack 13 week immersive course</p>
+                <p>M-F from 9-5, project oriented course focusing on Vue, Node and MongoDB</p>
+              </div>
+            </div>
+            <div class="journey-card" id="journey-bcw-end">
+              <p>Feb 2020</p>
+              <p>Complete Boise Codeworks</p>
+              <div class="journey-card-img bcw-end"></div>
+              <div id="bcw-end-popup" class="journey-popup">
+                <p>For the final project we worked in teams to come up with and develop our own applications</p>
+                <p>Once completed, we recieved our certificates of completion and we were ready to enter the workforce</p>
+              </div>
+            </div>
+            <div class=" journey-card" id="journey-covid">
+              <p>March 2020</p>
+              <p>Covid-19 starts</p>
+              <div class="journey-card-img covid"></div>
+              <div id="covid-popup" class="journey-popup">
+                <p>Completed Boise Codeworks just in time for the Covid-19 pandemic</p>
+                <p>This gave me the opportunity to continue developing my skills and expand my professional network</p>
+              </div>
+            </div>
+            <div class=" journey-card" id="journey-foundry">
+              <p>March 2021</p>
+              <p>Sign contract with Foundry Interactive</p>
+              <div class="journey-card-img foundry"></div>
+              <div id="foundry-popup" class="journey-popup">
+                <p>Foundry Interactive is a small development consultancy agency who partners with clients for various requirements, and in March I signed my first contract with them</p>
+              </div>
+            </div>
+            <div class=" journey-card" id="journey-downwrite">
+              <p>April 2021</p>
+              <p>Start new assignment at Downwrite</p>
+              <div class="journey-card-img downwrite"></div>
+              <div id="downwrite-popup" class="journey-popup">
+                <p>First client was Downwrite, Inc who is a small custom music service startup</p>
+                <p>I helped oversee the launch of their MVP and continued as the main developer for about another ~9mo</p>
+              </div>
+            </div>
+            <div class=" journey-card" id="journey-hinge-health">
+              <p>April 2022</p>
+              <p>Start new assignment at Hinge Health</p>
+              <div class="journey-card-img hinge-health"></div>
+              <div id="hinge-health-popup" class="journey-popup">
+                <p>Next assignment was Hinge Health, a large multi-billion dollar healthcare company</p>
+                <p>I was mainly responsible for migrating web pages from a mono-repo to a client specific React/TypeScript repository</p>
+              </div>
+            </div>
+            <div class=" journey-card" id="journey-complete-foundry">
+              <p>October 2022</p>
+              <p>Complete contract with Foundry Interactive</p>
+              <div class="journey-card-img complete-foundry"></div>
+              <div id="complete-foundry-popup" class="journey-popup">
+                <p>Due to the current economic situation, the contract with Hinge Health was ended early</p>
+                <p>Which also happened to be the last contract for work I'd recieve from Foundry, thus ending my time there</p>
+              </div>
+            </div>
+            <div class=" journey-card" id="journey-relaxation">
+              <p>Nov 2022</p>
+              <p>Mental relaxation</p>
+              <div class="journey-card-img relaxation"></div>
+              <div id="relaxation-popup" class="journey-popup">
+                <p>I took the month of November off as a sort of mini-vacation</p>
+                <p>I was still hopefull that something from Foundry would turn up, but I was enjoying my time off</p>
+              </div>
+            </div>
+            <div class=" journey-card" id="journey-start-bcp">
+              <p>Jan 2022</p>
+              <p>Start working on Bar Crawl Planner</p>
+              <div class="journey-card-img start-bcp"></div>
+              <div id="start-bcp-popup" class="journey-popup">
+                <p>After the holidays, I realized that no more work would come from Foundry and so I started working on my side project and began looking for new work</p>
+              </div>
+            </div>
+          </div></div>
+
           <!-- About Section Button -->
-          <div class="text-center mt-4">
+          <div class="text-center mt-5">
             <a
               class="btn btn-xl btn-outline-light"
               href="https://github.com/L-Garay"
@@ -271,62 +367,6 @@
               <i class="fab fa-fw fa-github mr-2"></i>
               My GitHub
             </a>
-          </div>
-          <!-- Journey part of About Section -->
-          <div class="col-12 mt-5" id="journey">
-            <div class="journey-card" id="journey-graduation" >
-              <p>May 2019</p>
-              <p>Graduate from ISU</p>
-              <div class="journey-card-img graduation"></div>
-            </div>
-            <div class="journey-card" id="journey-bcw-start" >
-              <p>Nov 2019</p>
-              <p>Start Boise Codeworks</p>
-              <div class="journey-card-img bcw-start"></div>
-              
-            </div>
-            <div class="journey-card" id="journey-bcw-end">
-              <p>Feb 2020</p>
-              <p>Complete Boise Codeworks</p>
-              <div class="journey-card-img bcw-end"></div>
-            </div>
-            <div class=" journey-card" id="journey-covid">
-              <p>March 2020</p>
-              <p>Covid-19 starts</p>
-              <div class="journey-card-img covid"></div>
-            </div>
-            <div class=" journey-card" id="journey-foundry">
-              <p>March 2021</p>
-              <p>Sign contract with Foundry Interactive</p>
-              <div class="journey-card-img foundry"></div>
-            </div>
-            <div class=" journey-card" id="journey-downwrite">
-              <p>April 2021</p>
-              <p>Start new assignment at Downwrite</p>
-              <small style="display: block;">(via Foundry Interactive)</small>
-              <div class="journey-card-img downwrite"></div>
-            </div>
-            <div class=" journey-card" id="journey-hinge-health">
-              <p>April 2022</p>
-              <p>Start new assignment at Hinge Health</p>
-              <small style="display: block;">(via Foundry Interactive)</small>
-              <div class="journey-card-img hinge-health"></div>
-            </div>
-            <div class=" journey-card" id="journey-complete-foundry">
-              <p>October 2022</p>
-              <p>Complete contract with Foundry Interactive</p>
-              <div class="journey-card-img complete-foundry"></div>
-            </div>
-            <div class=" journey-card" id="journey-relaxation">
-              <p>Nov 2022</p>
-              <p>Mental relaxation</p>
-              <div class="journey-card-img relaxation"></div>
-            </div>
-            <div class=" journey-card" id="journey-start-bcp">
-              <p>Dec 2022</p>
-              <p>Start working on Bar Crawl Planner</p>
-              <div class="journey-card-img start-bcp"></div>
-            </div>
           </div>
         </div>
       </section>

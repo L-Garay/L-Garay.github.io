@@ -10734,10 +10734,32 @@ a.text-dark:focus {
   background-position: center;
 }
 
+#about-content {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: max-content;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 #journey {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 80px;
 }
 
 .journey-card {
@@ -10756,7 +10778,7 @@ a.text-dark:focus {
 
 .journey-card:hover {
   box-shadow: 0 0 2pt 2pt #17bf9e;
-  cursor: default;
+  cursor: pointer;
 }
 
 .journey-card p {
@@ -10787,6 +10809,64 @@ a.text-dark:focus {
   margin-top: 0;
   background-image: url("../img/aboutMe/graduationCap.gif");
 }
+
+.journey-popup {
+  position: absolute;
+  transition: height .7s linear, opacity .7s linear, color .4s linear .4s;
+  height: 0px;
+  opacity: 0;
+  width: 200px;
+  border: 1px solid lightpink;
+  border-radius: 4px;
+  bottom: 105%;
+  left: 25px;
+  display: block;
+  color: transparent;
+  background: white;
+  box-shadow: 0 0 4pt lightpink;
+  padding: 10px;
+  text-align: start;
+}
+
+.journey-card .journey-popup p {
+  font-weight: bolder;
+  font-size: .8rem;
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+#journey-graduation,
+#journey-bcw-start,
+#journey-bcw-end,
+#journey-covid,
+#journey-foundry,
+#journey-downwrite,
+#journey-hinge-health,
+#journey-complete-foundry,
+#journey-relaxation,
+#journey-start-bcp {
+  position: relative;
+}
+
+#journey-graduation:hover #graduation-popup.journey-popup,
+#journey-bcw-start:hover #bcw-start-popup.journey-popup,
+#journey-bcw-end:hover #bcw-end-popup.journey-popup,
+#journey-covid:hover #covid-popup.journey-popup,
+#journey-foundry:hover #foundry-popup.journey-popup,
+#journey-downwrite:hover #downwrite-popup.journey-popup,
+#journey-hinge-health:hover #hinge-health-popup.journey-popup,
+#journey-complete-foundry:hover #complete-foundry-popup.journey-popup,
+#journey-relaxation:hover #relaxation-popup.journey-popup,
+#journey-start-bcp:hover #start-bcp-popup.journey-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 160px;
+  opacity: 1;
+  color: black;
+}
+
+
 
 .journey-card-img.bcw-start {
   background-image: url("../img/aboutMe/monitor.png");
@@ -10838,7 +10918,7 @@ a.text-dark:focus {
 
 .journey-card-img.downwrite {
   background-image: url("../img/aboutMe/music.png");
-  margin-top: 5.5px;
+  margin-top: 15px;
 }
 
 #journey-downwrite:hover .journey-card-img.downwrite {
@@ -10850,7 +10930,7 @@ a.text-dark:focus {
 
 .journey-card-img.hinge-health {
   background-image: url("../img/aboutMe/medicine.png");
-  margin-top: 4.5px;
+  margin-top: 14px;
 }
 
 #journey-hinge-health:hover .journey-card-img.hinge-health {
