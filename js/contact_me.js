@@ -30,6 +30,7 @@ $(function() {
         },
         cache: false,
         success: function() {
+          console.log('success');
           // Success message
           $('#success').html("<div class='alert alert-success'>");
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -63,13 +64,23 @@ $(function() {
     },
   });
 
-  $("a[data-toggle=\"tab\"]").click(function(e) {
+  $("a[data-toggle=\"tab\"]").on('click',function(e) {
     e.preventDefault();
     $(this).tab("show");
   });
 });
 
 /*When clicking on Full hide fail/success boxes */
-$('#name').focus(function() {
+$('#name').on('focus', function() {
   $('#success').html('');
 });
+
+/* Expand and collapse contact form */
+$('#contact-header,#contact-collapse').on('click', (function() {
+  console.log('hello');
+  if ($('.collapsable-section').hasClass('showContact')) {
+    $('.collapsable-section').removeClass('showContact');
+  } else {
+    $('.collapsable-section').addClass('showContact');
+  }
+}));

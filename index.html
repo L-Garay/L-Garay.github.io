@@ -45,7 +45,29 @@
             event.preventDefault();
             // generate the contact number value
             this.contact_number.value = (Math.random() * 100000) | 0;
-            emailjs.sendForm('logan_gmail', 'contact_form', this);
+            emailjs.sendForm('logan_gmail', 'contact_form', this).then(() => {
+              // Success message
+              $('#success').html("<div class='alert alert-success'>");
+              $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                .append("</button>");
+              $('#success > .alert-success')
+                .append("<strong>Your message has been sent. </strong>");
+              $('#success > .alert-success')
+                .append('</div>');
+              //clear all fields
+              $('#contactForm').trigger("reset");
+            }, () => {
+              // Fail message
+              $('#success').html("<div class='alert alert-danger'>");
+              $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                .append("</button>");
+              $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
+              $('#success > .alert-danger').append('</div>');
+              //clear all fields
+              $('#contactForm').trigger("reset");
+            }).finally(() => {
+
+            });
             document.getElementById('contact-form').reset();
           });
       };
@@ -534,11 +556,14 @@
       <div class="container">
         <!-- Contact Section Heading -->
         <h2
-          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+          id="contact-header"
+          class="page-section-heading contact-heading text-center text-uppercase text-secondary mb-0"
         >
           Contact Me
         </h2>
 
+        <!-- Collapsable Contact Section -->
+        <div class="collapsable-section contact">
         <!-- Icon Divider -->
         <div class="divider-custom">
           <div class="divider-custom-line"></div>
@@ -637,6 +662,8 @@
             </form>
           </div>
         </div>
+        <div id="contact-collapse">Collapse ^</div>
+      </div>
       </div>
     </section>
 
