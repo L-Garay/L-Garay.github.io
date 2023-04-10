@@ -80,7 +80,23 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 [tabindex="-1"]:focus {
@@ -10728,33 +10744,6 @@ a.text-dark:focus {
   padding: 6rem 0;
 }
 
-.portfolio-section-background {
-  background-image: url("../img/mainPhoto/beach.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-#about-content {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: max-content;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 #journey {
   display: flex;
   flex-wrap: wrap;
@@ -10763,10 +10752,11 @@ a.text-dark:focus {
 }
 
 .journey-card {
-  border: 1px solid grey;
+  border: 2px solid black;
   color: black;
+  background: white;
   border-radius: 0.5rem;
-  box-shadow: 3pt 3pt 2pt grey;
+  box-shadow: 3pt 3pt 2pt black;
   text-align: center;
   text-align: -webkit-center;
   padding: 5px 8px;
@@ -10777,7 +10767,7 @@ a.text-dark:focus {
 }
 
 .journey-card:hover {
-  box-shadow: 0 0 2pt 2pt #17bf9e;
+  box-shadow: 0 0 2pt 2pt white;
   cursor: pointer;
 }
 
@@ -10812,7 +10802,7 @@ a.text-dark:focus {
 
 .journey-popup {
   position: absolute;
-  transition: height .7s linear, opacity .7s linear, color .4s linear .4s;
+  transition: height .4s linear, opacity .4s linear, color .25s ease-in .1s;
   height: 0px;
   opacity: 0;
   width: 200px;
@@ -11144,15 +11134,22 @@ a.text-dark:focus {
   padding-bottom: 6rem;
 }
 
-.masthead-background {
+/* .masthead-background {
   background-image: url("../img/mainPhoto/white-wood.jpg");
   background-position: center;
   background-size: cover;
-}
+} */
 
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
+  color: black;
+  text-shadow: 4pt 4pt 4pt grey;
+}
+
+.masthead .masthead-subheading {
+  font-size: 1.75rem;
+  line-height: 1.5rem;
   color: black;
   text-shadow: 4pt 4pt 4pt grey;
 }
@@ -11176,6 +11173,13 @@ a.text-dark:focus {
   .masthead .masthead-heading {
     font-size: 4rem;
     line-height: 3.5rem;
+    color: black;
+    text-shadow: 4pt 4pt 4pt grey;
+  }
+
+  .masthead .masthead-subheading {
+    font-size: 2rem;
+    line-height: 1.75rem;
     color: black;
     text-shadow: 4pt 4pt 4pt grey;
   }
@@ -11418,8 +11422,24 @@ hr {
   text-shadow: 0 0 3px red;
 }
 
+#languages {
+  min-height: 100px;
+  max-height: 150px;
+  padding: 0 50px;
+  background: black;
+  display: flex;
+  align-items: center;
+}
+
 #logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: center;
+}
+
+.language-photos {
+  padding: 0 10px;
+  height: 3rem;
+  width: 3rem;
 }
