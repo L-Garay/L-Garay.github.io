@@ -77,10 +77,17 @@ $('#name').on('focus', function() {
 
 /* Expand and collapse contact form */
 $('#contact-header,#contact-collapse').on('click', (function() {
-  console.log('hello');
+  const contactForm = document.getElementById('contact');
+  
   if ($('.collapsable-section').hasClass('showContact')) {
     $('.collapsable-section').removeClass('showContact');
+    setTimeout(() => {
+      contactForm.scrollIntoView({behavior: 'smooth'});
+    }, 1500);
   } else {
     $('.collapsable-section').addClass('showContact');
+    setTimeout(() => {
+      contactForm.scrollIntoView({behavior: 'smooth'});
+    }, 1500);
   }
 }));

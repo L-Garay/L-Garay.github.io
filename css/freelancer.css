@@ -2008,7 +2008,7 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: black;
   background-color: #fff;
   background-clip: padding-box;
   border: 0.125rem solid #ced4da;
@@ -2028,35 +2028,35 @@ pre code {
 }
 
 .form-control:focus {
-  color: #495057;
-  background-color: #fff;
+  color: black;
+  background-color: transparent;
   border-color: #6bebd1;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
+  box-shadow: 0 0 2px 2px white !important;
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #6c757d;
+  color: black;
   opacity: 1;
 }
 
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: black;
   opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
+  color: black;
   opacity: 1;
 }
 
 .form-control::-ms-input-placeholder {
-  color: #6c757d;
+  color: black;
   opacity: 1;
 }
 
 .form-control::placeholder {
-  color: #6c757d;
+  color: black;
   opacity: 1;
 }
 
@@ -2067,7 +2067,7 @@ pre code {
 }
 
 select.form-control:focus::-ms-value {
-  color: #495057;
+  color: black;
   background-color: #fff;
 }
 
@@ -2603,8 +2603,8 @@ fieldset:disabled a.btn {
   /* color: rgb(0, 0, 0);
   background-color: rgb(3, 235, 215);
   border-color: rgb(8, 160, 147); */
-  color: rgb(0, 0, 0);
-  border-color: rgb(0, 0, 0);
+  color: black;
+  border-color: white;
 }
 
 .btn-primary2 {
@@ -2613,23 +2613,25 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary:hover {
-  color: rgb(0, 0, 0);
+  color: white;
   /* background-color: rgb(255, 213, 171); */
-  background-color: rgb(3, 235, 215, 0.5);
+  background-color: rgb(3, 235, 215, 0.75);
   border-color: black;
-  box-shadow: 3pt 3pt 3pt grey;
+  box-shadow: 0 0 3px 1px black;
 }
 
 .btn-primary2:hover {
-  color: rgb(0, 0, 0);
+  color: white;
   background-color: rgb(3, 235, 215);
   border-color: rgb(3, 3, 3);
   box-shadow: 2pt 2pt 2pt grey;
 }
 
 .btn-primary:focus,
-.btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+.btn-primary.focus,
+.btn-primary2:focus,
+.btn-primary2.focus {
+  box-shadow: 0 0 0 0.2rem rgb(3, 235, 215);
 }
 
 .btn-primary.disabled,
@@ -2643,8 +2645,8 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #148f77;
-  border-color: #12846e;
+  background-color: rgb(3, 235, 215);
+  border-color: rgb(3, 235, 215);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -11380,11 +11382,11 @@ hr {
 
 #contact-form {
   /* height: 500px; */
-  border: 1pt solid black;
-  box-shadow: 4pt 4pt 4pt grey;
+  border: 2pt solid black;
+  box-shadow: 4pt 4pt 4pt black;
   border-radius: 5%;
   padding: 15pt;
-  /* background-color: rgba(227, 198, 184, 0.4); */
+  background-color: rgb(126, 126, 126, 0.4)
 }
 
 #contact .container {
@@ -11414,12 +11416,18 @@ hr {
 
 #contact-collapse {
   margin-top: 50px;
-  font-weight: bold;
 }
 
-#contact-collapse:hover {
+#contact-collapse-text {
+  font-weight: bold;
+  display: inline;
+  text-align: center;
+}
+
+#contact-collapse-text:hover {
   cursor: pointer;
-  text-shadow: 0 0 3px red;
+  color: white;
+  text-shadow: 0 0 5px black;
 }
 
 #languages {
@@ -11442,4 +11450,19 @@ hr {
   padding: 0 10px;
   height: 3rem;
   width: 3rem;
+}
+
+.section-scroller {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.section-scroller a {
+  color: white;
+  text-shadow: 0 2pt 2pt black;
+  font-size: 1.5rem;
+  text-underline-offset: 0.5rem;
 }
