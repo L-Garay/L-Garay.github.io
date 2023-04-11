@@ -36,6 +36,15 @@
     offset: 80
   });
 
+  // When navbar menu is opened on mobile, need to push down marquee banner
+  $('.navbar-toggler').on('click', function() {
+    if($('.navbar-collapse').hasClass('show')) {
+      $('#marquee').removeClass('marquee-open-menu');
+    } else {
+      $('#marquee').addClass('marquee-open-menu');
+    }
+  })
+
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {

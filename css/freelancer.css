@@ -11615,6 +11615,10 @@ hr {
   height: 2rem;
 }
 
+.marquee-open-menu {
+  top: 258px;
+}
+
 @keyframes marquee1 {
   from {
     left: 0%;
