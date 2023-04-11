@@ -10750,7 +10750,6 @@ a.text-dark:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 80px;
 }
 
 .journey-card {
@@ -10808,14 +10807,14 @@ a.text-dark:focus {
   height: 0px;
   opacity: 0;
   width: 200px;
-  border: 1px solid lightpink;
+  border: 1px solid black;
   border-radius: 4px;
   bottom: 105%;
   left: 25px;
   display: block;
   color: transparent;
   background: white;
-  box-shadow: 0 0 4pt lightpink;
+  box-shadow: 3pt 3pt 2pt black;
   padding: 10px;
   text-align: start;
 }
@@ -11456,7 +11455,6 @@ hr {
   height: 100px;
   display: flex;
   justify-content: center;
-  align-content: center;
   flex-wrap: wrap;
 }
 
