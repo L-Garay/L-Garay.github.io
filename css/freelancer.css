@@ -547,7 +547,7 @@ mark,
 }
 
 .img-fluid {
-  max-width: 75%;
+  max-width: 65%;
   height: auto;
 }
 
@@ -11471,9 +11471,22 @@ hr {
 }
 
 .language-photos {
-  padding: 0 10px;
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.storybook {
+  margin-top: -15px;
+}
+
+.storybook img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.wix-photo {
+  height: 1.5rem;
+  width: 5.25rem;
 }
 
 .section-scroller {
