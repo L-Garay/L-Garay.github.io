@@ -11574,21 +11574,15 @@ hr {
   width: 100vw;
   overflow-x: hidden;
   position: fixed;
-  top: 104px;
+  top: 72px;
   right: 0;
   left: 0;
   transition: top 0.3s;
+  /* transition: height 0.3s; */
   background: rgb(255, 255, 255, 0.5);
   color: black;
   font-weight: bold;
   z-index: 1030;
-}
-
-.marquee-shrink {
-  top: 72px;
-  background: rgb(255, 255, 255);
-  border-bottom: 2px solid black;
-  height: 2rem;
 }
 
 .marquee1,
@@ -11608,11 +11602,32 @@ hr {
 }
 
 .marquee1 {
-  animation: marquee1 20s linear infinite;
+  animation: marquee1 5s linear infinite;
 }
 
 .marquee2 {
-  animation: marquee2 20s linear infinite;
+  animation: marquee2 5s linear infinite;
+}
+
+@media (min-width: 992px) {
+  .marquee-container {
+    top: 104px;
+  }
+
+  .marquee1 {
+    animation: marquee1 15s linear infinite;
+  }
+
+  .marquee2 {
+    animation: marquee2 15s linear infinite;
+  }
+}
+
+.marquee-shrink {
+  top: 72px;
+  background: rgb(255, 255, 255);
+  border-bottom: 2px solid black;
+  height: 2rem;
 }
 
 @keyframes marquee1 {
@@ -11633,4 +11648,21 @@ hr {
   to {
     left: 0%;
   }
+}
+
+#scrollToTop {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+#scrollToTop .scroll-button {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: white;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
 }
