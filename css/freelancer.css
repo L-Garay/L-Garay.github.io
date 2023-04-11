@@ -547,7 +547,7 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
 }
 
@@ -11373,6 +11373,31 @@ hr {
 .projectImgs:hover {
   box-shadow: 0 0 20px rgba(3, 235, 215, 0.9);
   border: 2pt solid rgba(3, 235, 215, 0.9);
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-meta p,
+.project-meta a {
+  font-weight: bold;
+  margin: 0;
+}
+
+.project-meta a {
+  padding-left: 5px;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+}
+
+.responsibilities {
+  margin-bottom: 40px;
+  text-align: start;
 }
 
 .page-section#contact {
