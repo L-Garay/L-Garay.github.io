@@ -11568,3 +11568,69 @@ hr {
   font-size: 1.5rem;
   text-underline-offset: 0.5rem;
 }
+
+.marquee-container {
+  height: 3rem;
+  width: 100vw;
+  overflow-x: hidden;
+  position: fixed;
+  top: 104px;
+  right: 0;
+  left: 0;
+  transition: top 0.3s;
+  background: rgb(255, 255, 255, 0.5);
+  color: black;
+  font-weight: bold;
+  z-index: 1030;
+}
+
+.marquee-shrink {
+  top: 72px;
+  background: rgb(255, 255, 255);
+  border-bottom: 2px solid black;
+  height: 2rem;
+}
+
+.marquee1,
+.marquee2 {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.marquee-container p {
+  margin-bottom: 0;
+}
+
+.marquee1 {
+  animation: marquee1 20s linear infinite;
+}
+
+.marquee2 {
+  animation: marquee2 20s linear infinite;
+}
+
+@keyframes marquee1 {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0%;
+  }
+}
