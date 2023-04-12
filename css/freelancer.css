@@ -10768,6 +10768,7 @@ a.text-dark:focus {
   box-shadow: 3pt 3pt 2pt black;
   text-align: center;
   text-align: -webkit-center;
+  text-align: -moz-center;
   padding: 5px 8px;
   width: 250px;
   min-height: 200px;
